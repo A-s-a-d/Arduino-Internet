@@ -1,0 +1,48 @@
+@import url();
+
+body{
+
+}
+
+header{
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 90%;
+     padding: 10px 90px;
+     background: rgb(123, 109, 109);
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     z-index: 99;
+}
+
+.Logo{
+  font-size: 2em;
+  color: white;
+  user-select: none;
+}
+
+.navigation a{
+  position: relative;
+  font-size: 1.1em;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 40px;
+  
+}
+
+.navigation .btnlogin-popup{
+  position: relative;
+  font-size: 1.1em;
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  border-radius: 6px;
+  color: white;
+  font-weight: 500;
+  margin-left: 40px;
+}
