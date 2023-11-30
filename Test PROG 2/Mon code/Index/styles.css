@@ -1,26 +1,43 @@
-@import url();
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-body{
-
-}
 
 header{
      position: fixed;
      top: 0;
      left: 0;
-     width: 90%;
+     width: 95%;
      padding: 10px 90px;
-     background: rgb(123, 109, 109);
      display: flex;
      justify-content: space-between;
-     align-items: center;
      z-index: 99;
 }
 
+body{
+  font-family: 'Poppins',sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(https://images.alphacoders.com/121/1218911.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .Logo{
-  font-size: 2em;
+  font-size: 1.5em;
   color: white;
   user-select: none;
+}
+
+.cyu {
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  top: 20px;
+  left: 20px;
+  position: absolute
 }
 
 .navigation a{
@@ -31,6 +48,26 @@ header{
   font-weight: 500;
   margin: 40px;
   
+}
+
+.navigation a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  left: 0;
+  bottom: -6px;
+  transition: .5s;
+  transform: scaleX(0); 
+  transform-origin: right;
+}
+
+.navigation a:hover::after{
+  transform: scaleX(1);
+  transform-origin: left;
+
 }
 
 .navigation .btnlogin-popup{
@@ -45,4 +82,38 @@ header{
   color: white;
   font-weight: 500;
   margin-left: 40px;
+  transition: .5s;
+}
+
+.navigation .btnlogin-popup:hover{
+  background-color: white;
+  color: #162938;
+}
+
+.welcome-container {
+  text-align: center;
+  height: 400px;
+  display: flex;
+  user-select: none;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 4em;
+  margin: 0;
+  color: transparent;
+  background-image: linear-gradient(to right, #fff, rgb(112, 23, 214), #fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: animate 8s linear infinite alternate-reverse;
+  position: absolute;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 300%;
+  }
 }
