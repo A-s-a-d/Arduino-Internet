@@ -19,13 +19,13 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url(https://images.alphacoders.com/121/1218911.jpg) no-repeat;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://images.alphacoders.com/121/1218911.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .Logo{
-  font-size: 1.5em;
+  font-size: 20px;
   color: white;
   user-select: none;
 }
@@ -33,8 +33,8 @@ body{
 .cyu {
   display: block;
   margin: 0 auto;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   top: 20px;
   left: 20px;
   position: absolute
@@ -42,12 +42,11 @@ body{
 
 .navigation a{
   position: relative;
-  font-size: 1.1em;
+  font-size: 15px;
   color: white;
   text-decoration: none;
   font-weight: 500;
   margin: 40px;
-  
 }
 
 .navigation a::after {

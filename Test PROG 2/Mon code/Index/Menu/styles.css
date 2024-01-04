@@ -1,98 +1,58 @@
-p { 
-    color: red;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
 }
 
-h1 {
-    color: blue;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid black;
-    text-align: center;
-    margin: 0;
-    padding: 20px 0;
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://r4.wallpaperflare.com/wallpaper/591/696/997/benz-benz-e-car-class-wallpaper-a93088bdd18acdbb86d7b82f5031e6dd.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative
 }
 
-body{
-    font-family: Garamond, serif;
-    width: 800px;
-    margin: 0 auto;
-    background-color: rgb(255, 255, 255);
-    padding: 5px 20px 200px 20px;
-    border: 5px solid black;
-    top: 150px;
+nav{
+  display: flex;
+  padding: 2%;
+  justify-content: space-between;
+  align-items: center;
 }
 
-html{
-    background-color: rgb(255, 255, 255);
+nav img{
+  width: 75px;
 }
 
-.T1{
-position: relative;
-background-color: rgb(255, 255, 255);
+.nav-links{
+  flex: 1;
+  text-align: right;
+
 }
 
-.T1 img{
-    display: block;
-    margin: 0 auto;
-    width: 75px;
-    height: 75px;
-    top: 0px;
-    left: 20px;
-    position: absolute
-}
-.T3 button{
-    border: 0;
-  line-height: 2.5;
-  padding: 0 20px;
-  font-size: 1rem;
-  text-align: center;
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
-  border-radius: 10px;
-  background-color: rgba(220, 0, 0, 1);
-  background-image: linear-gradient(
-    to top left,
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.2) 30%,
-    rgba(0, 0, 0, 0)
-  );
-  box-shadow:
-    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
 }
 
-.T3:hover {
-  background-color: rgba(255, 0, 0, 1);
+.nav-links ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
 }
 
-.T3:active {
-  box-shadow:
-    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
-    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+.nav-links ul li::after{
+  content:'';
+  width: 0%;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
 }
 
-.urgent{
-  color: red;
+.nav-links ul li:hover::after{
+  width: 100%;
 }
-
-details {
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  padding: 0.5em 0.5em 0;
-}
-
-summary {
-  font-weight: bold;
-  margin: -0.5em -0.5em 0;
-  padding: 0.5em;
-}
-
-details[open] {
-  padding: 0.5em;
-}
-
-details[open] summary {
-  border-bottom: 1px solid #aaa;
-  margin-bottom: 0.5em;
-}
-
-
