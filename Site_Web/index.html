@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page d'accueil</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/CYU.png" alt="Logo de Cy Université">
+      <span>Projet tutoré</span>
+    </div>
+    <nav>
+        <a class="cta" href="index.html"><span>Accueil</span></a>
+        <a class="cta" href="about.html"><span>Compte rendu</span></a>
+        <a class="cta" href="temperature.html"><span>Température</span></a>
+    </nav>
+  </header>
+  <main>
+    <h1>Bienvenue sur notre site web !</h1>
+    <p>
+        Ce site web retrace l'évolution de notre projet. 
+    </p>
+    <p>
+        Notre projet vise à créer une communication intelligente entre une carte Arduino 
+        (un boîtier placé chez soi et connecté à un fournisseur d'accès Internet) 
+        et un PC ou un smartphone n'importe où dans le monde où on a accès à Internet. 
+        Le matériel nécessaire comprend une carte Arduino Uno, une plaque lab, 
+        une carte Ethernet Shield 2 Rev3 et un capteur de température analogique TMP 36. 
+    </p>
+    <p>
+        Les étapes clés de ce projet incluent le téléchargement et l'installation de l'environnement Arduino sur nos PC, 
+        la familiarisation avec cet environnement grâce à des tutoriels disponibles en ligne ou avec l'aide du Starter Kit, 
+        la mesure de la température avec le capteur TMP36, l'utilisation du Shield Ethernet en configurant notre box via les connaissances en réseaux, 
+        la lecture à distance de la température, et la simulation d'une commande de chauffage par l'allumage de LED. 
+        Enfin, une page web traditionnelle sera créée pour présenter la température en direct. 
+        Ce projet combine ainsi le monde d’Arduino, la connectivité Internet, et l'automatisation pour offrir une solution pratique et interactive.
+    </p>
+    <div class="hover-frame" id="frame1">
+        <img src="images/TMP36.png" alt="Image par défaut">
+        <p>Capteur TMP36 permettant d'obtenir la température</p>
+    </div>
+
+    <div class="hover-frame" id="frame2">
+        <img src="images/Arduino.png" alt="Image par défaut">
+        <p>Carte arduino qui nous permet d'envoyer la température à un serveur</p>
+    </div>
+
+    <div class="hover-frame" id="frame3">
+        <img src="images/Serveur.png" alt="Image par défaut">
+        <p>Serveur qui gère les requêtes de l'utilisateur et qui va chercher la température donner par la carte Arduino</p>
+    </div>
+
+    <div class="hover-frame" id="frame4">
+        <img src="images/Telephone.png" alt="Image par défaut">
+        <p>L'utilisateur peut ainsi se connecter au serveur pour voir la température</p>
+    </div>
+  </main>
+</body>
+</html>
