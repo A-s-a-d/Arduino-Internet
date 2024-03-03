@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #313131;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -5px -5px;
+  }
+  
+  header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px; /* Ajuster la taille selon les besoins */
+    margin-right: 10px;
+  }
+  
+  .logo span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  .cta {
+    position: relative;
+    margin: 0 10px;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: #007bff; /* Couleur de fond des boutons */
+    color: #fff; /* Couleur du texte des boutons */
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cta span {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .cta:hover {
+    background: #0056b3; /* Couleur de fond des boutons au survol */
+  }
+  
+  .cta:active {
+    transform: scale(0.95);
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 100px; /* Ajoutez un espace supplémentaire au-dessus du titre si nécessaire */
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+  }
+
+  p {
+    color: white;
+    text-align: justify;
+    margin: 20px auto; /* Marge autour du paragraphe */
+    max-width: 800px; /* Limite la largeur du paragraphe */
+    font-size: 22px;
+    line-height: 1.6;
+  }
+
+  .hover-frame {
+    width: 300px; /* Largeur du cadre */
+    height: 300px; /* Hauteur du cadre */
+    left: 13%;
+    background-color: #007bff; /* Couleur de fond du cadre */
+    color: white; /* Couleur du texte */
+    padding: 20px; /* Espacement intérieur du cadre */
+    border-radius: 10px; /* Bord arrondi */
+    position: relative; /* Position relative pour placer le texte par rapport à l'image */
+    margin: 20px auto; /* Marge pour espacer les cadres */
+    margin-top: 4%;
+    overflow: hidden; /* Masque le texte qui pourrait dépasser */
+    cursor: pointer; /* Curseur pointer pour indiquer que le cadre est cliquable */
+    transition: all 0.3s ease; /* Transition fluide */
+    display: inline-block;
+  }
+  
+  .hover-frame img {
+    max-width: 100%; /* Assurez-vous que l'image ne dépasse pas de la cadre */
+    transition: all 0.3s ease; /* Transition fluide */
+  }
+  
+  .hover-frame p {
+    margin-top: 10px; /* Marge supérieure pour séparer l'image du texte */
+    opacity: 0; /* Le texte est invisible par défaut */
+    position: absolute; /* Position absolue par rapport au cadre */
+    top: 50%; /* Centrer verticalement */
+    left: 50%; /* Centrer horizontalement */
+    transform: translate(-50%, -50%); /* Centrer le texte */
+    transition: opacity 0.3s ease; /* Animation de transition en douceur */
+  }
+  
+  .hover-frame:hover p {
+    opacity: 1; /* Le texte devient visible au survol */
+  }
+  
+  .hover-frame:hover img {
+    opacity: 0; /* L'image devient invisible au survol */
+  }
+
+.Temperature {
+  position: absolute  ;
+  top: 300px;
+  bottom: 600px;
+  left: 800px;
+  right: 800px;
+  margin: auto; /* Assure le centrage horizontal et vertical */
+  text-align: center;
+  border-radius: 5px;
+  background: white;
+}

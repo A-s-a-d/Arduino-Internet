@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu d'une page</title>
+    <style>
+        table, 
+    td{
+        border: 1px solid#332;
+    }
+
+    thead
+    tfoot{
+        background-color: #332;
+        color: #fff;
+    }
+    </style>
+    <style>
+        td,
+th {
+  border: 1px solid rgb(190, 190, 190);
+  padding: 10px;
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+}
+
+th[scope='col'] {
+  background-color: #696969;
+  color: #fff;
+}
+
+th[scope='row'] {
+  background-color: #d7d9f2;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200, 200, 200);
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+}
+
+</style>
+
+<style>
+.table_container {
+    display: flex;
+}
+
+table {
+    width: 15%;
+    margin: 1;
+    border-spacing: 1;
+}
+</style>
+
+</head>
+<body>
+    <h1>Le menu</h1>
+    
+    <h2>Entrée</h2>
+    <ul>
+        <li><a href="menu/entree1.html" target="_blank">Entrée 1</a></li>
+        <li>Entrée 2</li>
+        <li>Entrée 3</li>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis harum dignissimos, quas quibusdam nihil aperiam praesentium pariatur, adipisci quam repellendus quae nemo et. Commodi, ipsum ducimus odit voluptates sunt voluptatem!
+        </p>
+    </ul>
+    <hr>
+    <h2>Sorties</h2>
+    <ul>
+        <li>S1</li>
+        <li>S2</li>
+        <li>S2</li>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quaerat saepe dolorem, sint adipisci vitae consequatur atque quisquam perferendis nobis distinctio accusantium quia asperiores officia dolores, hic praesentium nihil id!
+        </p>
+    <hr>
+    </ul>
+<div class="table_container">
+        <table>
+            <caption>
+                Tableau TEST 
+            </caption>
+            <thead>
+                <tr>
+                    <td>Nom du produit</td>
+                    <td>Prix HT</td>
+                    <td>Quantité</td>
+                    <td>Prix TTC</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ecran</td>
+                    <td>300e</td>
+                    <td>1</td>
+                    <td>250e</td>
+                </tr>
+                <tr>
+                    <td>Figurine</td>
+                    <td>30e</td>
+                    <td>2</td>
+                    <td>25e</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" rowspan="2"></td>
+                    <td>Total</td>
+                    <td>250e</td>
+                </tr>
+            </tfoot>
+        </table>
+        <table>
+            <tr>
+                <td colspan="2">Hardware</td>
+            </tr>
+            <tbody>
+            <tr>
+                <td>Items</td>
+                <td>Prices</td>
+            </tr>
+            <tr>
+                <!--<td><img src="img/Law.jpg" alt="Test" width="200" height="200"></td>-->
+                <td>Mouse</td>
+                <td>3 euros</td>
+            </tr>
+            <tr>
+                <td>Keyboard</td>
+                <td>99 euros</td>
+            </tr>
+            <tr>
+                <td colspan="2">Softwares</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"> <em>Tout les prix sont en description</em></td>
+            </tr>
+        </tfoot>
+        </table>
+</div>
+    <hr>
+    <p>
+        <a href="Index.html">Revenir sur la page d'accueil</a>
+    </p>
+</body>
+</html>
