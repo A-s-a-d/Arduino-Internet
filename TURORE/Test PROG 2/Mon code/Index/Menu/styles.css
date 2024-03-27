@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+}
+
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://r4.wallpaperflare.com/wallpaper/591/696/997/benz-benz-e-car-class-wallpaper-a93088bdd18acdbb86d7b82f5031e6dd.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative
+}
+
+nav{
+  display: flex;
+  padding: 2%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img{
+  width: 75px;
+}
+
+.nav-links{
+  flex: 1;
+  text-align: right;
+
+}
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav-links ul li::after{
+  content:'';
+  width: 0%;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+  width: 100%;
+}
