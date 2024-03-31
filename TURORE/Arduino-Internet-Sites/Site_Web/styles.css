@@ -1,0 +1,334 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+    background: rgb(19, 39, 62);
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 4em;
+    margin: 0;
+    color: transparent;
+    background-image: linear-gradient(to right, #ffffff, rgb(60, 143, 221), #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animate 8s linear infinite alternate-reverse;
+    position: absolute;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 300%;
+    }
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    /* Ajuster la taille selon les besoins */
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+nav {
+    display: flex;
+    color: #fff;
+}
+
+.cta {
+    position: relative;
+    margin: 0 10px;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: #e2ec4b;
+    /* Couleur de fond des boutons */
+    color: #fff;
+    /* Couleur du texte des boutons */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta span {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cta:hover {
+    background: #c92222;
+    /* Couleur de fond des boutons au survol */
+}
+
+.cta:active {
+    transform: scale(0.95);
+}
+
+.h1-temperature-container {
+    text-align: center;
+    margin-top: 100px;
+    /* Ajoutez un espace supplémentaire au-dessus du titre si nécessaire */
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+p {
+    color: white;
+    text-align: justify;
+    margin: 20px auto;
+    /* Marge autour du paragraphe */
+    max-width: 800px;
+    /* Limite la largeur du paragraphe */
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.hover-frame {
+    width: 300px;
+    /* Largeur du cadre */
+    height: 300px;
+    /* Hauteur du cadre */
+    position: relative;
+    background-color: rgb(60, 143, 221);
+    /* Couleur de fond du cadre */
+    color: white;
+    /* Couleur du texte */
+    padding: 20px;
+    /* Espacement intérieur du cadre */
+    border-radius: 10px;
+    /* Bord arrondi */
+    /* Marge pour espacer les cadres */
+    margin-top: 4%;
+    overflow: hidden;
+    /* Masque le texte qui pourrait dépasser */
+    cursor: pointer;
+    /* Curseur pointer pour indiquer que le cadre est cliquable */
+    transition: all 0.3s ease;
+    /* Transition fluide */
+    display: inline-block;
+}
+
+.hover-frame img {
+    max-width: 100%;
+    /* Assurez-vous que l'image ne dépasse pas de la cadre */
+    transition: all 0.3s ease;
+    /* Transition fluide */
+    object-fit: cover;
+
+}
+
+.hover-frame p {
+    /* Marge supérieure pour séparer l'image du texte */
+    opacity: 0;
+    /* Le texte est invisible par défaut */
+    position: absolute;
+    /* Position absolue par rapport au cadre */
+    top: 40%;
+    /* Centrer verticalement */
+    left: 50%;
+    /* Centrer horizontalement */
+    transform: translate(-50%, -50%);
+    /* Centrer le texte */
+    transition: opacity 0.3s ease;
+    /* Animation de transition en douceur */
+    font-size: 20px;
+    text-align: center;
+    width: 90%;
+
+}
+
+.hover-frame:hover p {
+    opacity: 1;
+    /* Le texte devient visible au survol */
+}
+
+.hover-frame:hover img {
+    opacity: 0;
+    /* L'image devient invisible au survol */
+}
+
+.Temperature {
+    position: absolute;
+    top: 300px;
+    bottom: 600px;
+    left: 800px;
+    right: 800px;
+    margin: auto;
+    text-align: center;
+    border-radius: 32px;
+    background: white;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+}
+
+.scroll-container {
+    scroll-behavior: smooth;
+}
+
+.img1 {
+    object-fit: cover;
+    padding: 64px 64px 64px 64px;
+    margin: 50px 64px 64px 64px;
+    height: 550px;
+    width: 750px;
+    top: 0;
+    left: 0;
+    border-radius: 80px;
+}
+
+.p1-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+    margin: 0;
+    color: transparent;
+    background-image: linear-gradient(to top, #ffffff, rgb(132, 209, 233), #40c9eb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animate 8s linear infinite alternate-reverse;
+    position: absolute;
+    left: 150px;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 300%;
+    }
+}
+
+
+.p2-title {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+    color: transparent;
+    background-image: linear-gradient(to right, #1f80cf, rgb(28, 161, 194), #1f80cf);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animate 8s linear infinite alternate-reverse;
+    position: absolute;
+    left: 150px;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 25px;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 300%;
+    }
+}
+
+
+.p2text {
+    position: relative;
+    margin: 100px 64px;
+    padding: 50px;
+    line-height: 1.5;
+
+    justify-content: center;
+}
+
+.p3text {
+    color: black;
+    padding: 64px;
+    line-height: 1.5;
+    position: absolute;
+    z-index: 2;
+    margin: 100px 0px 5px 70px;
+}
+
+.box-text1 {
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.content-wrapper {
+    position: relative;
+}
+
+.w3-bar {
+    margin-top: 10px;
+}
+
+/***************************TEST******************************/
+.footer {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0;
+}
+
+.footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.container-text {
+    width: 50%;
+    height: 100px;
+    border: 5px;
+    top: 0;
+    /* margin-top: 20px; */
+}
+
+.container-frame {
+
+    margin-top: -130px;
+    padding: 64px;
+    border: 0;
+
+}
