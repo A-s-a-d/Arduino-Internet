@@ -1,20 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    margin: 0;
-    padding: 0;
     width: 100%;
     height: 100%;
-    background-color: #000000;
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background: rgb(19, 39, 62);
 }
 
 h1 {
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 4em;
     margin: 0;
     color: transparent;
-    background-image: linear-gradient(to right, #1c8099, rgb(112, 23, 214), #fff);
+    background-image: linear-gradient(to right, #ffffff, rgb(60, 143, 221), #ffffff);
     -webkit-background-clip: text;
     background-clip: text;
     animation: animate 8s linear infinite alternate-reverse;
@@ -114,8 +118,8 @@ p {
     /* Largeur du cadre */
     height: 300px;
     /* Hauteur du cadre */
-    left: 13%;
-    background-color: #afafaf;
+    position: relative;
+    background-color: rgb(60, 143, 221);
     /* Couleur de fond du cadre */
     color: white;
     /* Couleur du texte */
@@ -123,9 +127,6 @@ p {
     /* Espacement intérieur du cadre */
     border-radius: 10px;
     /* Bord arrondi */
-    position: relative;
-    /* Position relative pour placer le texte par rapport à l'image */
-    margin: 20px auto;
     /* Marge pour espacer les cadres */
     margin-top: 4%;
     overflow: hidden;
@@ -135,8 +136,6 @@ p {
     transition: all 0.3s ease;
     /* Transition fluide */
     display: inline-block;
-
-
 }
 
 .hover-frame img {
@@ -144,16 +143,17 @@ p {
     /* Assurez-vous que l'image ne dépasse pas de la cadre */
     transition: all 0.3s ease;
     /* Transition fluide */
+    object-fit: cover;
+
 }
 
 .hover-frame p {
-    margin-top: 10px;
     /* Marge supérieure pour séparer l'image du texte */
     opacity: 0;
     /* Le texte est invisible par défaut */
     position: absolute;
     /* Position absolue par rapport au cadre */
-    top: 50%;
+    top: 40%;
     /* Centrer verticalement */
     left: 50%;
     /* Centrer horizontalement */
@@ -161,6 +161,10 @@ p {
     /* Centrer le texte */
     transition: opacity 0.3s ease;
     /* Animation de transition en douceur */
+    font-size: 20px;
+    text-align: center;
+    width: 90%;
+
 }
 
 .hover-frame:hover p {
@@ -195,25 +199,29 @@ footer {
 }
 
 .img1 {
-    position: relative;
-    border-radius: 8px;
-    display: block;
-    height: auto;
-    width: auto;
-    float: right;
-    margin-left: 200px;
     object-fit: cover;
+    padding: 64px 64px 64px 64px;
+    margin: 50px 64px 64px 64px;
+    height: 550px;
+    width: 750px;
+    top: 0;
+    left: 0;
+    border-radius: 80px;
 }
 
-.p1 {
-    font-size: 4em;
+.p1-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
     margin: 0;
     color: transparent;
-    background-image: linear-gradient(to right, #fff, rgb(112, 23, 214), #fff);
+    background-image: linear-gradient(to top, #ffffff, rgb(132, 209, 233), #40c9eb);
     -webkit-background-clip: text;
     background-clip: text;
     animation: animate 8s linear infinite alternate-reverse;
     position: absolute;
+    left: 150px;
+    padding: 25px;
+    margin-top: 30px;
 }
 
 @keyframes animate {
@@ -226,25 +234,97 @@ footer {
     }
 }
 
-.component-visible {
 
-    left: -594px;
-    top: 115px;
-    z-index: 7578;
-    width: 1194px;
-    height: 481px;
-    transform: rotate(0rad);
-}
+.p2-title {
 
-.componentBody {
-    overflow: visible;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+    color: transparent;
+    background-image: linear-gradient(to right, #1f80cf, rgb(28, 161, 194), #1f80cf);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animate 8s linear infinite alternate-reverse;
     position: absolute;
-    left: 88px;
-    right: auto;
-    width: 1011px;
+    left: 150px;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 25px;
 }
 
-.stripBody {
-    background: rgb(112, 23, 214);
-    transform: skewY(-4deg);
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 300%;
+    }
+}
+
+
+.p2text {
+    position: relative;
+    margin: 100px 64px;
+    padding: 50px;
+    line-height: 1.5;
+
+    justify-content: center;
+}
+
+.p3text {
+    color: black;
+    padding: 64px;
+    line-height: 1.5;
+    position: absolute;
+    z-index: 2;
+    margin: 100px 0px 5px 70px;
+}
+
+.box-text1 {
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.content-wrapper {
+    position: relative;
+}
+
+/***************************TEST******************************/
+.footer {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0;
+}
+
+.footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.container-text {
+    width: 50%;
+    height: 100px;
+    border: 5px;
+    top: 0;
+    /* margin-top: 20px; */
+}
+
+.container-frame {
+
+    margin-top: -130px;
+    padding: 64px;
+    border: 0;
+
 }
