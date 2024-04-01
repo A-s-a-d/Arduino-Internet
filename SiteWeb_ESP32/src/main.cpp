@@ -9,8 +9,6 @@
 #include "ds1621.h"
 #include "rtc3231.h"
 
-using namespace std;
-
 const int MONITOR_SPEED = 115200;
 const uint8_t LED_WIFI_PIN = A0;
 const uint8_t LED_WEB_PIN = A1;
@@ -30,8 +28,6 @@ const String API_KEY = "&appid=4ed4771a297b8f8173a1f45d7da47789";
 const String URL = "http://api.openweathermap.org/data/2.5/weather?q=";
 const String UNITS = "&units=metric";
 const String LANG = "&lang=fr";
-
-const String datas = "98";
 
 String City = "Paris,FR";
 String Filename = "";
@@ -127,6 +123,7 @@ void ReadFile(String Filename) {
     if(c == '\n') {
       temperatureTab[cptTab] = temperatureStr.toFloat();
       cptTab++;
+      temperatureStr = "";
     }
     else
       temperatureStr += c;
@@ -209,7 +206,6 @@ void action()
   temperatureTab[CountLinesInFile(Filename)] = gtemperature;
 
   if(CountLinesInFile(Filename) >= 20) {
-
     Filename = CreateFilename();
   }
   
@@ -249,8 +245,6 @@ void setRoutes()
     {   
         Serial.println("Requete : graphique");
         String tableauStr = "[";
-
-        PrintTemperatureTab();
 
         for (int i = 0; i < SIZE_OF_GRAPH; ++i) {
           tableauStr += String(temperatureTab[i]);

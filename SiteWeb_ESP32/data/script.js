@@ -4,8 +4,6 @@ const API_temperature_ref = document.getElementById("API_temperature_id");
 const API_cloud_ref = document.getElementById("API_cloud_id");
 const API_icon_ref = document.getElementById("API_icon_id");
 const temperature_ref = document.getElementById("temperature_id");
-const delay = 1000;
-let datas = [];
 
 button_API_ref.addEventListener("click", (event) => {
   const value = cityinfos_ref.value;
@@ -41,7 +39,7 @@ setInterval(() => {
       gaugeTemperature.refresh(value);
     }
   }
-}, delay);
+}, 1000);
 
 let myChart; // Déclaration d'une variable globale pour stocker le graphique
 
