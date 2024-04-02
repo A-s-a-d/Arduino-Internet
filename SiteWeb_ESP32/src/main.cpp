@@ -217,6 +217,9 @@ void setRoutes()
   server.on("/", HTTP_GET, [](AsyncWebServerRequest *request)
             { request->send(SPIFFS, "/index.html", "text/html"); });
 
+  server.on("/index.html", HTTP_GET, [](AsyncWebServerRequest *request)
+            { request->send(SPIFFS, "/index.html", "text/html"); });
+
   server.on("/justgage.js", HTTP_GET, [](AsyncWebServerRequest *request)
             { request->send(SPIFFS, "/justgage.js", "text/javascript"); });
 

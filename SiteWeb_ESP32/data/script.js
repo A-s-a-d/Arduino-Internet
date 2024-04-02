@@ -58,7 +58,6 @@ setInterval(() => {
 
             // Vérifier si un graphique existe déjà sur ce canvas
             if (myChart) {
-                // Si un graphique existe, le détruire
                 myChart.destroy();
             }
 
